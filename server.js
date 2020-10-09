@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 const db = knex({
   client: "pg",
   connection: {
-    host: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL,
     password: "",
     database: "smart-brain",
     ssl: true,
